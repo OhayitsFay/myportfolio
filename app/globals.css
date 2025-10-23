@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background-image: url('/background.jpg');
+  --foreground: #b05b74;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: black;
+    --foreground: #5a1017;
+  }
+}
+
+body {
+  background: var(--background-image);
+  color: var(--foreground);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Make all buttons show the hand cursor */
+button {
+  cursor: pointer;
+}
+
