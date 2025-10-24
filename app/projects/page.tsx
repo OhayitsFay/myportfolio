@@ -69,7 +69,7 @@ export default function ProjectsPage() {
 
       {/* Animated cards grid */}
       <motion.div
-        className="gap-8  mt-8 mb-10 p-12 grid sm:grid-cols-2 md:grid-cols-3"
+        className="projects-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible md:grid-cols-3 snap-x snap-mandatory scroll-smooth"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

@@ -18,14 +18,14 @@ export default function HomePage() {
         <motion.img
           src="/favourite.jpg"
           alt="Favourite Atuhu"
-          className="w-208 h-208 rounded-full mx-auto mb-6 border-4 border-burgundy-500 object-cover"
+          className="w-100% rounded-full mx-auto mb-6 border-4 border-burgundy-500 object-cover"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
         />
 
         {/* Dancing name */}
-        <h1 className="text-5xl sm:text-7xl font-bold text-burgundy-400 mb-6 flex flex-wrap justify-center">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-burgundy-400 mb-9 text-center">
           {name.map((letter, i) => (
             <motion.span
               key={i}
@@ -46,7 +46,7 @@ export default function HomePage() {
         </h1>
 
         <motion.p
-          className="text-gray-900 text-xl sm:text-2xl mb-20"
+          className="text-gray-900 text-xl sm:text-2xl mb-20 text-center px-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -83,8 +83,8 @@ export default function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-4xl sm:text-5xl font-semibold mb-5 text-burgundy-600 p-12">Projects</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 mb-10">
+        <h2 className="text-4xl sm:text-5xl font-semibold mb-10 text-burgundy-600 p-12 ">Projects</h2>
+        <div className="projects-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible md:grid-cols-3 snap-x snap-mandatory scroll-smooth">
           <Cards
             title="Event Planning Hub"
             description="An event management platform built with JavaScript and APIs."
@@ -113,7 +113,7 @@ export default function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="text-3xl sm:text-5xl font-semibold mb-4 text-burgundy-600 p-10">Get in Touch</h2>
+        <h2 className="text-4xl sm:text-5xl font-semibold mb-10 text-burgundy-600">Get in Touch</h2>
         <p className="text-gray-700 mb-4 text-lg sm:text-3xl">
           I’m open to freelance, contract, or full-time opportunities.
         </p>

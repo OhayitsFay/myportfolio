@@ -43,8 +43,8 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
           >
           <h2 className="text-5xl font-semibold text-burgundy-600 mb-15">Skills</h2>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:grid-cols-4 gap-6 mb-20 ">
-            <div className="bg-[#fffff1] shadow-md rounded-lg p-4 border-l-4 border-[#b05b74]">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="skills-section flex md:grid md:grid-cols-3 gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-smooth">
+            <div className="min-w-[70%] sm:min-w-0 bg-[#fff8f0] text-[#5a1017] rounded-xl shadow-md p-4 text-center snap-start">
               <h3 className="font-semibold text-gray-950 mb-2 text-4xl">Frontend</h3>
                 <ul className="list-disc list-inside text-gray-900 text-3xl">
                   <li>React / Next.js</li>
@@ -54,7 +54,7 @@ export default function AboutPage() {
                 </ul>
             </div>
 
-            <div className="bg-[#fffff1] shadow-md rounded-lg p-4 border-l-4 border-[#b05b74]">
+            <div className="min-w-[70%] sm:min-w-0 bg-[#fff8f0] text-[#5a1017] rounded-xl shadow-md p-4 text-center snap-start">
               <h3 className="font-bold text-gray-700 mb-4 text-4xl">Backend</h3>
                 <ul className="list-disc list-inside text-gray-900 text-3xl">
                   <li>Node.js / Express</li>
@@ -64,7 +64,7 @@ export default function AboutPage() {
                 </ul>
             </div>
 
-            <div className="bg-[#fffff1] shadow-md rounded-lg p-4 border-l-4 border-[#b05b74]">
+            <div className="min-w-[70%] sm:min-w-0 bg-[#fff8f0] text-[#5a1017] rounded-xl shadow-md p-4 text-center snap-start">
               <h3 className="font-bold text-gray-700 mb-4 text-4xl">Software Testing & QA</h3>
                 <ul className="list-disc list-inside text-gray-900 text-3xl">
                   <li>Postman</li>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                </ul>
             </div>
 
-            <div className="bg-[#fffff1] shadow-md rounded-lg p-4 border-l-4 border-[#b05b74]">
+            <div className="min-w-[70%] sm:min-w-0 bg-[#fff8f0] text-[#5a1017] rounded-xl shadow-md p-4 text-center snap-start">
               <h3 className="font-bold text-gray-700 mb-4 text-4xl">Tools & Others</h3>
                 <ul className="list-disc list-inside text-gray-900 text-3xl">
                   <li>Git & GitHub</li>
